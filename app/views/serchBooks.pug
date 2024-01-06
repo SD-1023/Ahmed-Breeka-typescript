@@ -1,0 +1,17 @@
+html
+    head 
+        title Search Books
+    body 
+        h2 Result Search :- 
+        table 
+            thead
+                tr 
+                td Name 
+                td Author
+                td Isbn
+            tbody 
+            each book in books 
+                tr 
+                    td #{book.name}
+                    td #{book.author}
+                    td #{book.Isbn}
